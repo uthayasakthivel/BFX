@@ -1,0 +1,25 @@
+.medical__wrapper {
+  max-width: 1990px;
+  margin: 0 auto;
+  padding: 0 50px 2rem 140px;
+  background-color: rgb(219, 219, 219);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1440px) {
+  .medical__wrapper {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .medical__wrapper {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .medical__wrapper {
+    padding: 0 50px 6rem 140px;
+  }
+}

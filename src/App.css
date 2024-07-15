@@ -1,0 +1,39 @@
+/* 
+.table-container {
+  margin-top: 20px;
+
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-container th {
+  background-color: #f2f2f2;
+}
+
+.table-container td {
+  vertical-align: top;
+}
+
+.table-container td:last-child {
+  text-align: center;
+}
+
+.table-container a {
+  text-decoration: none;
+  color: #007bff;
+  margin-left: 5px;
+} */
+
+input:focus {
+  outline: none;
+}

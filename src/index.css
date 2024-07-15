@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --primary: #423fe5;
+  --secondary: #ffffff;
+  --light-blue: #7d7afb;
+  --danger: #f72525;
+  --bg-color: #efeeef;
+  --text: #5f5b5b;
+  --text-blue-primay: #5e5bfb;
+  --text-grey: #868181;
+  --text-dark: #000000;
+  --text-blue-secondary: #5c5b8f;
+  --lines: #00000023;
+  --padding-default: 50px;
+  --border-radius-default: 15px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  font-family: "poppins";
+}
+
+p,
+a,
+span {
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+h1 {
+  font-size: 5.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2,
+h2 span {
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+}
+
+p,
+button,
+input::placeholder {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex__start {
+  justify-content: start;
+}
+
+.flex__between {
+  justify-content: space-between;
+}
+
+.align__start {
+  align-items: start;
+}
+
+.align__end {
+  align-items: end;
+}
+
+.flex__column {
+  flex-direction: column;
+}
+
+.gap1 {
+  gap: 20px;
+}
+.gap1 {
+  gap: 10px;
+}
+
+.gloabal__button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--primary);
+  color: var(--secondary);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gloabal__button:hover {
+  background-color: #000897;
+}
+
+.gloabal__button__invert {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.gloabal__button__invert:hover {
+  background-color: #d2d2d2;
+}
+
+/* .edit__btn {
+} */
+
+.delete__btn {
+  background-color: var(--danger);
+}
+
+.delete__btn:hover {
+  background-color: #b20000;
+}
+
+.gloabal__input {
+  padding: 0.5rem 1rem;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid var(--lines);
+  outline: none;
+  color: grey;
+  margin: 1rem 0;
+  margin-right: 1rem;
+  transition: border-bottom 0.3s ease;
+  font-size: 1.6rem;
+}
+
+.gloabal__input:focus {
+  border-bottom: 1px solid var(--primary);
+}
+
+.gloabal__input.typing {
+  border-bottom-color: rgb(0, 255, 55);
+}
+
+.error-msg {
+  color: var(--secondary);
+}
+
+.Todo__heading {
+  margin-bottom: 1rem;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 1600px) {
+  a {
+    font-size: 3.6rem;
+  }
+  p,
+  button,
+  input::placeholder {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+  h2,
+  h2 span {
+    font-size: 6.4rem;
+    line-height: 8.3rem;
+    margin-top: 3.8rem;
+  }
+}
